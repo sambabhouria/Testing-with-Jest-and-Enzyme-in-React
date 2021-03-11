@@ -119,3 +119,17 @@ describe('<Form /> lifecycle method invocations', () => {
         expect(wrapper.state('componentState')).toEqual('mounted');
     });
 });
+
+// Special Note on ‘componentDidMount’
+/**
+ * Assume you have a database call in one of your lifecycle methods (componentDidMount or any other).
+ * If you call it from the tests, it will definitely fail because you do not have the database connection when you are testing.
+ * So, the solution for this is to use a prototype function of componentDidMount which is defined in your test file like below.
+ * 
+ * 
+ * beforeAll(() => {
+    Form.prototype.componentDidMount = () => {
+        console.log('componentDidMount method is called');
+    };
+});
+ */
