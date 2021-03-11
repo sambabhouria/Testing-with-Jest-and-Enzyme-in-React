@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`will check the matchers and pass 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "id": Any<Number>,
+  "name": "LeBron James",
+}
+`;
+
+exports[`will fail every time 1`] = `
+Object {
+  "createdAt": 2021-03-11T14:40:16.692Z,
+  "id": 6,
+  "name": "LeBron James",
+}
+`;

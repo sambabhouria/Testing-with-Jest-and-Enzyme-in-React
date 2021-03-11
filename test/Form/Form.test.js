@@ -2,7 +2,7 @@
 
 /* eslint-disable no-undef */
 
-import Form from './Form';
+import Form from '../../src/components/Form';
 
 let wrapper;
 

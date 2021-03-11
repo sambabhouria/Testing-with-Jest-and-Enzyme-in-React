@@ -1,8 +1,8 @@
 
 
 /* eslint-disable no-undef */
-import Add from './Add';
-import Form from './Form';
+import Add from '../../src/components/Add';
+import Form from '../../src/components/Form';
 
 let wrapper;
 

@@ -9,9 +9,12 @@
     "babel-preset-react-app": "^10.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "fs": "^0.0.1-security",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "request": "^2.88.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

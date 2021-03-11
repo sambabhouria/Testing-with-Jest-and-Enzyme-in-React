@@ -150,6 +150,8 @@ mount + unmount call => componentWillUnmount method.
 ## Snapshot Testing in Jest)
 
 ## What is Snapshot Testing?
+Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
+A typical snapshot test case renders a UI component, takes a snapshot, then compares it to a reference snapshot file stored alongside the test.
 We know that a Snapshot is a photograph which has taken quickly. We can have this kind of a snapshot, for a React component too.
 Assume I took a snapshot of a React component yesterday. It consists of 2 <label>s and 2 <input>s.
 Today I am adding another <label> to the component. (Now altogether 3 <labels>)
@@ -161,3 +163,5 @@ This technique provides by Jest, to compare components with their snapshots, is 
 
 To update snapshot :
 ./node_modules/.bin/jest --updateSnapshot
+
+That's all there is to it! You can even update the snapshots with --updateSnapshot or using the u key in --watch mode.
