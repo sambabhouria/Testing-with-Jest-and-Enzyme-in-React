@@ -165,3 +165,8 @@ To update snapshot :
 ./node_modules/.bin/jest --updateSnapshot
 
 That's all there is to it! You can even update the snapshots with --updateSnapshot or using the u key in --watch mode.
+
+
+### `screenShot`
+<img src="src/assets/images/1.png" width="300" height="300"/><img src="src/assets/images/2.png" width="300" height="300"/>
+<img src="src/assets/images/3.png" width="300" height="300"/><img src="src/assets/images/1.png" width="300" height="300"/>
