@@ -14,6 +14,10 @@ beforeEach(() => {
 
 describe('<Form /> rendering', () => {
 
+    it('renders correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
+
     it('should render one <form>', () => {
         // The first test checks whether there is one <form> element when the <Form> is rendered.
         expect(wrapper.find('form')).toHaveLength(1);
@@ -125,8 +129,8 @@ describe('<Form /> lifecycle method invocations', () => {
  * Assume you have a database call in one of your lifecycle methods (componentDidMount or any other).
  * If you call it from the tests, it will definitely fail because you do not have the database connection when you are testing.
  * So, the solution for this is to use a prototype function of componentDidMount which is defined in your test file like below.
- * 
- * 
+ *
+ *
  * beforeAll(() => {
     Form.prototype.componentDidMount = () => {
         console.log('componentDidMount method is called');

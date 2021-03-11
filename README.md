@@ -145,3 +145,19 @@ But this is more costly in execution time
 Simple mount calls =>  the constructor, render, componentDidMount methods.
 mount + setProps call = > componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate methods.
 mount + unmount call => componentWillUnmount method.
+
+
+## Snapshot Testing in Jest)
+
+## What is Snapshot Testing?
+We know that a Snapshot is a photograph which has taken quickly. We can have this kind of a snapshot, for a React component too.
+Assume I took a snapshot of a React component yesterday. It consists of 2 <label>s and 2 <input>s.
+Today I am adding another <label> to the component. (Now altogether 3 <labels>)
+Now the snapshot we took yesterday is different from what we have today as the component.
+If we compare these two (the snapshot and the component) we can find where the difference occurs.
+This technique provides by Jest, to compare components with their snapshots, is known as Snapshot Testing in Jest.
+
+## How to do Snapshot Testing in Jest?
+
+To update snapshot :
+./node_modules/.bin/jest --updateSnapshot
